@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NavBar */
+.NavBar_wrapper {
+    background:white;
+    border: 1px solid #E5E5E5;
+
+    position: absolute;
+    width: 1920px;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+/* NavBar_logo*/
+.NavBar_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 600px;
+
+    margin-left: 28px;
+}
+.NavBar_logo a {
+    width: 40px;
+    height: 40px;
+}
+.NavBar_logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.NavBar_logoHeading {
+    font-weight: bold;
+    font-size: 24px;
+
+    margin-left: 18px;
+}
+/* NavBar_body */
+.NavBar_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 600px;
+}
+.Search_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search_wrapper input {
+    width: 352px;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* NavBar_actions */
+.NavBar_actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 600px;
+
+    margin-right: 28px;
+}
+.NavBar_actions button {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+
+    background: #1AAD8A;
+    border: none;
+
+    width: 132px;
+    height: 39px;
+    padding: auto;
+}
