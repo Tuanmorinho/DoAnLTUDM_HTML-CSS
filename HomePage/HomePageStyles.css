@@ -10,7 +10,8 @@
     background:white;
     border: 1px solid #E5E5E5;
 
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     width: 1920px;
     height: 66px;
     left: 0px;
@@ -45,28 +46,8 @@
     font-weight: bold;
     font-size: 24px;
 
-    margin-left: 18px;
+    margin-left: 26px;
 }
-/* NavBar_body */
-/* .NavBar_body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 600px;
-}
-.Search_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Search_wrapper input {
-    width: 352px;
-    height: 38px;
-    padding-left: 10px;
-    padding-right: 10px;
-} */
-
 /* NavBar_actions */
 .NavBar_actions {
     display: flex;
@@ -88,4 +69,123 @@
     width: 132px;
     height: 39px;
     padding: auto;
+}
+
+
+/* Section App */
+/* CONTENT */
+/* Header */
+.Home_header {
+    position: absolute;
+    left: 0px;
+    top: 76px;
+}
+.Header_wrapper {
+    width: 1920px;
+    height: 500px;
+}
+.BackgroundImg {
+    width: 1920px;
+    height: 500px;
+
+    opacity: 0.8;
+
+    object-fit: cover;
+}
+.White_broad {
+    background: white;
+    border-radius: 50px 0px;
+
+    position: absolute;
+    width: 1137px;
+    height: 416px;
+    left: 27px;
+    top: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.White_broad img {
+    width: 297px;
+    height: 297px;
+
+    object-fit: cover;
+    margin-left: 65px;
+}
+.Header_information {
+    height: 260px;
+    margin-left: 76px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Header_information p {
+    font-weight: normal;
+    font-size: 24px;
+
+    margin-top: 10px;
+}
+.information {
+    color: #11998E;
+    font-weight: bold;
+}
+.information h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.information h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.login-register {
+    font-weight: normal;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.login-register button {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+
+    background: #1AAD8A;
+    border: none;
+
+    width: 132px;
+    height: 39px;
+    padding: auto;
+}
+
+
+
+
+
+/* Footer */
+.Footer_wrapper {
+    background:white;
+    border: 1px solid #E5E5E5;
+
+    position: fixed;
+    z-index: 2;
+    width: 1920px;
+    height: 31px;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Footer_wrapper p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #c4c4c4;
+
+    margin-right: 28px;
 }
