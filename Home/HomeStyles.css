@@ -112,17 +112,17 @@ span.account_circle {
 
 
 /* Section App */
-/* Sidebar */
 .App_withSidebar {
     min-height: 100vh;
 
     display: flex;
 }
+/* Sidebar */
 .App_sidebarWrap {
     flex-shrink: 0;
 }
 .Sidebar_wrapper {
-    position: sticky;
+    position: fixed;
     left: 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -201,9 +201,12 @@ span.icon_me {
 }
 
 /* CONTENT */
+.App_withSidebarContent {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 /* Header-student */
 .Home_header-student {
-
     position: absolute;
     left: 110px;
     top: 76px;
@@ -267,6 +270,12 @@ span.icon_me {
     font-size: 27px;
 }
 
+/* Body-student */
+.Home_wrapper-student {
+    position: absolute;
+    left: 110px;
+    top: 312px;
+}
 
 /* Footer */
 .Footer_wrapper {
