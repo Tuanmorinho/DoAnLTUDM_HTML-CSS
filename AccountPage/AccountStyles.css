@@ -11,7 +11,7 @@
     border: 1px solid #E5E5E5;
 
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     width: 1920px;
     height: 66px;
     left: 0px;
@@ -211,7 +211,7 @@ span.icon_me {
     border: 1px solid #E5E5E5;
 
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     width: 1920px;
     height: 31px;
     bottom: 0;
