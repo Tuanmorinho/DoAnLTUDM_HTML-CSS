@@ -13,6 +13,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>QUIZ</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#hoover_srollButton").hover(function () {
+                $("#scrollButton_enable").show();
+            }, function () {
+                $("#scrollButton_enable").hide();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -98,34 +108,86 @@
                     <div class="SectionList_wrapper">
                         <div class="SectionList_headingWrap">
                             <h2 class="SectionList_heading">Bài thi sắp diễn ra</h2>
-                            <p>Xem tất cả <span class="material-icons-outlined icon_seeAll"> chevron_right </span></p>
+                            <a href="../ExamPage/Exam.html">Xem tất cả <span class="material-icons icon_seeAll">
+                                    chevron_right </span></a>
                         </div>
                         <div class="SectionList_bodyWrap">
-                            <div class="SectionList_body">
-                                <div class="Home_examItem"></div>
-                                <div class="Home_examItem"></div>
-                                <div class="Home_examItem"></div>
-                                <div class="Home_examItem"></div>
-                                <div class="Home_examItem"></div>
+                            <div id="hoover_srollButton" class="SectionList_body">
+                                <!-- Exam Active -->
+                                <section class="Home_examItem">
+                                    <div class="examItem_wrapper">
+                                        <div class="item_label">
+                                            <label>Mã bài thi:&ensp;<span>654321</span></label>
+                                            <h1>Bài TH3 môn LTUDM - 63IT2</h1>
+                                        </div>
+                                        <div class="item_infomation">
+                                            <div>
+                                                <a class="material-icons icon_teacher"> account_box </a>
+                                                <p>Giảng viên:&nbsp;<span>Lê Đức Quang</span></p>
+                                            </div>
+                                            <div>
+                                                <a class="material-icons icon_timer"> alarm </a>
+                                                <label class="font_weight-bold">180&nbsp;phút</label>
+                                            </div>
+                                        </div>
+                                        <div class="green_bottom">
+                                            <button>Bắt đầu thi</button>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Exam disabled -->
+                                <section class="Home_examItem">
+                                    <div class="examItem_wrapper">
+                                        <div class="item_label">
+                                            <label>Mã bài thi:&ensp;<span>654321</span></label>
+                                            <h1>Bài TH3 môn LTUDM - 63IT2</h1>
+                                        </div>
+                                        <div class="item_infomation">
+                                            <div>
+                                                <a class="material-icons icon_teacher"> account_box </a>
+                                                <p>Giảng viên:&nbsp;<span>Lê Đức Quang</span></p>
+                                            </div>
+                                            <div>
+                                                <a class="material-icons icon_timer"> alarm </a>
+                                                <label class="font_weight-bold">180&nbsp;phút</label>
+                                            </div>
+                                        </div>
+                                        <div class="green_bottom">
+                                            <button>Bắt đầu thi</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="scrollButton_enable" class="horizontalScroll_button">
+                                <div class="white_cirle">
+                                    <span class="material-icons"> arrow_forward_ios </span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
                     <div class="SectionList_wrapper">
                         <div class="SectionList_headingWrap">
                             <h2 class="SectionList_heading">Bài đã thi</h2>
-                            <p>Xem tất cả <span class="material-icons-outlined icon_seeAll"> chevron_right </span></p>
+                            <a href="../GradePage/Grade.html">Xem tất cả <span class="material-icons icon_seeAll">
+                                    chevron_right </span></a>
                         </div>
                         <div class="SectionList_bodyWrap">
-                            <div class="SectionList_body">
-                                <div class="Home_gradeItem"></div>
-                                <div class="Home_gradeItem"></div>
-                                <div class="Home_gradeItem"></div>
-                                <div class="Home_gradeItem"></div>
-                                <div class="Home_gradeItem"></div>
+                            <div id="hoover_srollButton" class="SectionList_body">
+                                <!-- Grade -->
+
+                            </div>
+                            <div id="scrollButton_enable" class="horizontalScroll_button">
+                                <div class="white_cirle">
+                                    <span class="material-icons"> arrow_forward_ios </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </div>
     </div>
