@@ -210,7 +210,41 @@ span.icon_me {
     position: absolute;
     left: 110px;
     top: 95px;
+
+    overflow-y: scroll;
+    mask-image: linear-gradient(to top, transparent, black),
+	linear-gradient(to left, transparent 17px, black 17px);
+    mask-size: 100% 20000px;
+	mask-position: left bottom;
+	-webkit-mask-image: linear-gradient(to top, transparent, black),
+	linear-gradient(to left, transparent 17px, black 17px);
+	-webkit-mask-size: 100% 20000px;
+	-webkit-mask-position: left bottom;
+	transition: mask-position 0.3s, -webkit-mask-position 0.3s;
 }
+.Home_wrapper-exam:hover {
+    -webkit-mask-position: left top;
+    mask-position: left top;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color:rgba(0,0,0,.05);
+    box-shadow:inset 1px 0 0 rgba(0,0,0,.1)
+}
+::-webkit-scrollbar-thumb{
+    border: 1px;
+    background:rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 5px rgba(255,255,255,.1); 
+}
+::-webkit-scrollbar-thumb:window-inactive{
+    background: #fff;
+    border: 1px;
+}
+
+
+
 .SectionList_wrapper {
     width: 1775px;
 
