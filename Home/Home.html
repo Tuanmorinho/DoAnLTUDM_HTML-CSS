@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="./HomeStyles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,41 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
         $(function () {
-            $("#hoover_srollButton").hover(function () {
-                $("#scrollButton_enable").show();
+            $("#hoover_scrollButton").hover(function () {
+                $("#scrollButton_enable").fadeIn();
             }, function () {
-                $("#scrollButton_enable").hide();
+                $("#scrollButton_enable").fadeOut();
             });
         });
+        $(function () {
+            $("#hoover_scrollButton2").hover(function () {
+                $("#scrollButton_enable2").fadeIn();
+            }, function () {
+                $("#scrollButton_enable2").fadeOut();
+            });
+        });
+
+        $(window).resize(function () {
+            var width = $(window).width();
+            if (width = 1280) {
+                $('body').css({
+                    zoom: zoomSize150,
+                    'moz-transform' : 'scale(' + zoomSize150 + ')'
+                })
+            } else if (width = 1536) {
+                $('body').css({
+                    zoom: zoomSize125,
+                    'moz-transform' : 'scale(' + zoomSize125 + ')'
+                })
+            } else {
+                $('body').css({
+                    zoom: 1,
+                    'moz-transform' : 'scale(' + 1 + ')'
+                })
+            }
+        });
+        var zoomSize150 = 0.67;
+        var zoomSize125 = 0.8;
     </script>
 </head>
 
@@ -111,26 +140,26 @@
                             <a href="../ExamPage/Exam.html">Xem tất cả <span class="material-icons icon_seeAll">
                                     chevron_right </span></a>
                         </div>
-                        <div class="SectionList_bodyWrap">
-                            <div id="hoover_srollButton" class="SectionList_body">
+                        <div id="hoover_scrollButton" class="SectionList_bodyWrap">
+                            <div class="SectionList_body">
                                 <!-- Exam Active -->
                                 <section class="Home_examItem">
                                     <div class="examItem_wrapper">
-                                        <div class="item_label">
+                                        <div class="item_label red">
                                             <label>Mã bài thi:&ensp;<span>654321</span></label>
                                             <h1>Bài TH3 môn LTUDM - 63IT2</h1>
                                         </div>
                                         <div class="item_infomation">
                                             <div>
                                                 <a class="material-icons icon_teacher"> account_box </a>
-                                                <p>Giảng viên:&nbsp;<span>Lê Đức Quang</span></p>
+                                                <p>Giảng viên:<span>Lê Đức Quang</span></p>
                                             </div>
                                             <div>
                                                 <a class="material-icons icon_timer"> alarm </a>
                                                 <label class="font_weight-bold">180&nbsp;phút</label>
                                             </div>
                                         </div>
-                                        <div class="green_bottom">
+                                        <div class="item_bottom greenBottom">
                                             <button>Bắt đầu thi</button>
                                         </div>
                                     </div>
@@ -139,21 +168,21 @@
                                 <!-- Exam disabled -->
                                 <section class="Home_examItem">
                                     <div class="examItem_wrapper">
-                                        <div class="item_label">
+                                        <div class="item_label red">
                                             <label>Mã bài thi:&ensp;<span>654321</span></label>
                                             <h1>Bài TH3 môn LTUDM - 63IT2</h1>
                                         </div>
                                         <div class="item_infomation">
                                             <div>
                                                 <a class="material-icons icon_teacher"> account_box </a>
-                                                <p>Giảng viên:&nbsp;<span>Lê Đức Quang</span></p>
+                                                <p>Giảng viên:<span>Lê Đức Quang</span></p>
                                             </div>
                                             <div>
                                                 <a class="material-icons icon_timer"> alarm </a>
                                                 <label class="font_weight-bold">180&nbsp;phút</label>
                                             </div>
                                         </div>
-                                        <div class="green_bottom">
+                                        <div class="item_bottom greenBottom">
                                             <button>Bắt đầu thi</button>
                                         </div>
                                     </div>
@@ -176,12 +205,45 @@
                             <a href="../GradePage/Grade.html">Xem tất cả <span class="material-icons icon_seeAll">
                                     chevron_right </span></a>
                         </div>
-                        <div class="SectionList_bodyWrap">
-                            <div id="hoover_srollButton" class="SectionList_body">
+                        <div id="hoover_scrollButton2" class="SectionList_bodyWrap">
+                            <div class="SectionList_body">
                                 <!-- Grade -->
-
+                                <section class="Home_examItem">
+                                    <div class="examItem_wrapper">
+                                        <div class="item_label orange">
+                                            <label>Mã bài thi:&ensp;<span>654321</span></label>
+                                            <h1>Bài TH3 môn LTUDM - 63IT2</h1>
+                                        </div>
+                                        <div class="item_infomation itemGrade">
+                                            <div>
+                                                <a class="material-icons icon_teacher"> account_box </a>
+                                                <p>Giảng viên:<span>Lê Đức Quang</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="item_bottom orangeBottom">
+                                            <h1>17/20&ensp;-&ensp;(85.00%)</h1>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="Home_examItem">
+                                    <div class="examItem_wrapper">
+                                        <div class="item_label orange">
+                                            <label>Mã bài thi:&ensp;<span>654321</span></label>
+                                            <h1>Bài TH3 môn LTUDM - 63IT2</h1>
+                                        </div>
+                                        <div class="item_infomation itemGrade">
+                                            <div>
+                                                <a class="material-icons icon_teacher"> account_box </a>
+                                                <p>Giảng viên:<span>Lê Đức Quang</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="item_bottom orangeBottom">
+                                            <h1>17/20&ensp;-&ensp;(85.00%)</h1>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                            <div id="scrollButton_enable" class="horizontalScroll_button">
+                            <div id="scrollButton_enable2" class="horizontalScroll_button">
                                 <div class="white_cirle">
                                     <span class="material-icons"> arrow_forward_ios </span>
                                 </div>

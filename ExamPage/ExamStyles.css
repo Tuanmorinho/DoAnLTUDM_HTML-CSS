@@ -205,29 +205,11 @@ span.icon_me {
     flex-grow: 1;
     flex-shrink: 1;
 }
-/* Body-student */
-.Home_wrapper-exam {
-    position: absolute;
-    left: 110px;
-    top: 95px;
-
+.Section_content {
     overflow-y: scroll;
-    mask-image: linear-gradient(to top, transparent, black),
-	linear-gradient(to left, transparent 17px, black 17px);
-    mask-size: 100% 20000px;
-	mask-position: left bottom;
-	-webkit-mask-image: linear-gradient(to top, transparent, black),
-	linear-gradient(to left, transparent 17px, black 17px);
-	-webkit-mask-size: 100% 20000px;
-	-webkit-mask-position: left bottom;
-	transition: mask-position 0.3s, -webkit-mask-position 0.3s;
-}
-.Home_wrapper-exam:hover {
-    -webkit-mask-position: left top;
-    mask-position: left top;
 }
 ::-webkit-scrollbar{
-    width: 6px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track:hover{
     background-color:rgba(0,0,0,.05);
@@ -243,8 +225,12 @@ span.icon_me {
     border: 1px;
 }
 
-
-
+/* Body-student */
+.Home_wrapper-exam {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+}
 .SectionList_wrapper {
     width: 1775px;
 
@@ -291,7 +277,7 @@ span.icon_me {
     align-items: center;
     justify-content: space-between;
 }
-.item_label {
+.item_label-red {
     height: 57px;
     width: 1020px;
     margin-left: 18px;
@@ -301,17 +287,17 @@ span.icon_me {
     align-items: flex-start;
     justify-content: space-between;
 }
-.item_label label {
+.item_label-red label {
     font-weight: normal;
     font-size: 18px;
     color: #000000;
 }
-.item_label span {
+.item_label-red span {
     font-weight: bold;
     font-size: 18px;
-    color: #FF7600;
+    color: #DF2E2E;
 }
-.item_label h1 {
+.item_label-red h1 {
     font-weight: 600;
     font-size: 18px;
     color: #000000;
