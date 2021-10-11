@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./HomeStyles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,26 +28,6 @@
             }, function () {
                 $("#scrollButton_enable2").fadeOut();
             });
-        });
-
-        $(window).resize(function () {
-            var width = $(window).width();
-            if (width = 1280) {
-                $('body').css({
-                    zoom: 0.67,
-                    'moz-transform' : 'scale(' + 0.67 + ')'
-                })
-            } else if (width = 1536) {
-                $('body').css({
-                    zoom: 0.8,
-                    'moz-transform' : 'scale(' + 0.8 + ')'
-                })
-            } else {
-                $('body').css({
-                    zoom: 1,
-                    'moz-transform' : 'scale(' + 1 + ')'
-                })
-            }
         });
     </script>
 </head>
@@ -132,6 +112,7 @@
                 </div>
                 <!-- Main content -->
                 <div class="Home_wrapper-student">
+                    <!-- Bai thi sap dien ra -->
                     <div class="SectionList_wrapper">
                         <div class="SectionList_headingWrap">
                             <h2 class="SectionList_heading">Bài thi sắp diễn ra</h2>
@@ -184,6 +165,28 @@
                                             <button>Bắt đầu thi</button>
                                         </div>
                                     </div>
+                                    <div class="disable_countdown">
+                                        <div class="Bg_countdown-white">
+                                            <div class="Timer_wrapper">
+                                                <div class="Timer count_days">
+                                                    <h1>05</h1>
+                                                    <label>Days</label>
+                                                </div>
+                                                <div class="Timer count_hours">
+                                                    <h1>11</h1>
+                                                    <label>Hours</label>
+                                                </div>
+                                                <div class="Timer count_minutes">
+                                                    <h1>56</h1>
+                                                    <label>Minutes</label>
+                                                </div>
+                                                <div class="Timer count_seconds">
+                                                    <h1>20</h1>
+                                                    <label>Seconds</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </section>
                             </div>
                             <div id="scrollButton_enable" class="horizontalScroll_button">
@@ -194,9 +197,7 @@
                         </div>
                     </div>
 
-
-
-
+                    <!-- Bai da thi -->
                     <div class="SectionList_wrapper">
                         <div class="SectionList_headingWrap">
                             <h2 class="SectionList_heading">Bài đã thi</h2>

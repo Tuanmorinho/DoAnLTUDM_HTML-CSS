@@ -230,3 +230,15 @@ span.icon_me {
 
     margin-right: 28px;
 }
+
+/* RESPONSIVE SCALE SCREENS */
+@media only screen and (width: 1280px) {
+    body {
+        zoom: 0.67;
+    }
+}
+@media only screen and (width: 1536px) {
+    body {
+        zoom: 0.8;
+    }
+}

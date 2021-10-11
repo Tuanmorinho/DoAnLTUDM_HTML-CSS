@@ -9,7 +9,7 @@ body {
     background: url('../asset/BackgroundImg.png');
     background-size: cover;
     
-    width: 1920px;
+    width: 1910px;
     height: 961px;
 
     display: flex;
@@ -128,4 +128,16 @@ span.icon-register {
     font-weight: 700;
     color: rgb(4 170 109);
     text-decoration: none;
+}
+
+/* RESPONSIVE SCALE SCREENS */
+@media only screen and (width: 1280px) {
+    body {
+        zoom: 0.67;
+    }
+}
+@media only screen and (width: 1536px) {
+    body {
+        zoom: 0.8;
+    }
 }
