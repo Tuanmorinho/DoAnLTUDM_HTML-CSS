@@ -19,13 +19,13 @@
             var width = $(window).width();
             if (width = 1280) {
                 $('body').css({
-                    zoom: zoomSize150,
-                    'moz-transform' : 'scale(' + zoomSize150 + ')'
+                    zoom: 0.67,
+                    'moz-transform' : 'scale(' + 0.67 + ')'
                 })
             } else if (width = 1536) {
                 $('body').css({
-                    zoom: zoomSize125,
-                    'moz-transform' : 'scale(' + zoomSize125 + ')'
+                    zoom: 0.8,
+                    'moz-transform' : 'scale(' + 0.8 + ')'
                 })
             } else {
                 $('body').css({
@@ -34,8 +34,6 @@
                 })
             }
         });
-        var zoomSize150 = 0.67;
-        var zoomSize125 = 0.8;
     </script>
 </head>
 
