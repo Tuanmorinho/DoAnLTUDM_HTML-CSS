@@ -200,109 +200,159 @@ span.icon_me {
     color: #4B3869;
 }
 
-/* CONTENT */ 
+/* CONTENT */
+.App_withSidebarContent {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.Section_content {
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color:rgba(0,0,0,.05);
+    box-shadow:inset 1px 0 0 rgba(0,0,0,.1)
+}
+::-webkit-scrollbar-thumb{
+    border: 1px;
+    background:rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 5px rgba(255,255,255,.1); 
+}
+::-webkit-scrollbar-thumb:window-inactive{
+    background: #fff;
+    border: 1px;
+}
 
+/* Body-account */
 .auth-form {
-    
-   
-    border-radius: 50px;
-    padding-left: 50px;
-    padding-top: 65px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
 }
 
 .auth-form_broad {
-    width: 719px;
-    height: 719px;
-
-    
+    display: flex;
     flex-direction: column;
-    
-}
-
-
-.auth-form_header {
-    margin-top: 68px;
-}
-.auth-form_header img {
-    width: 64px;
-    height: 64px;
-
-    object-fit: cover;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
 .auth-form_heading {
     font-weight: bold;
     font-size: 26px;
-    margin-top: 30px;
 }
-.auth-form-item{
-    display: flex;
-    margin-top: 65px;
-    flex-direction: row;
-    align-items: center;
 
-}
-.auth-form_infor{
+.auth-form-item{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    margin-top: 68px;
+    margin-left: 24px;
     
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+span.account_circle2 {
+    background: -webkit-linear-gradient(#1AAD8A 0%, #4B3869 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+}
+
+.auth-form_infor{
+    height: 50px;
     margin-left: 15px;
+
     display: flex;
     flex-direction: column;
-    justify-content: safe;
+    justify-content: space-around;
 }
-.auth-form_form{
-   
-    border-radius: 50px;
-  
-    margin-top: 56px;
-    border: 30px;
+.auth-form_infor h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+.auth-form_infor label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.auth-form_form{ 
+    width: 656px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .auth-form_group {
-    margin-bottom: 25px;
-    padding: 10px;
-    
-    
-}
-.auth-form_label {
-   
-    align-items: center;
+    width: 656px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: flex-start;
-    margin-bottom: 10px;
+}
+
+
+.auth-form_label {
+    margin-bottom: 15px;
 }
 .auth-form_label label {
+    margin-left: 103px;
+
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.auth-form_input_wrapper {
+    width: 656px;
+    margin-bottom: 15px;
+
+    outline: none;
+    border: none;    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.auth-form_input_wrapper label {
     font-weight: 500;
     font-size: 16px;
 }
 
 .auth-form_input {
-    display: flex;
-    
-    justify-content: space-between;
-    outline: none;
-    border: none;    
-    margin-bottom: 10px;
-    width: 656px
-    
-}
+    border: 1px solid #C4C4C4;
+    background: #E5E5E5;
+    border-radius: 20px;
 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0 16px;
+}
 .auth-form_input input {
     font-size: 14px;
     background: #E5E5E5;
-    border: 1px solid #C4C4C4;
-    
 
     outline: none;
-    
+    border: none;
     padding: 0 10px;
-    width: 358px;
+
+    width: 495px;
     height: 40px;
-    
-    border: none;    
-    border-radius: 50px;
 }
-
-
+span.icon-accountMe {
+    color: #C4C4C4;
+}
 
 .form-submit {
     font-weight: bold;
@@ -313,7 +363,7 @@ span.icon_me {
     outline: none;
     border: none;    
     border-radius: 50px;
-    width: 358px;
+    width: 552px;
     height: 40px;
     cursor: pointer;
     transition: opacity 0.2s ease;
@@ -323,7 +373,6 @@ span.icon_me {
 }
 
 
-/* CONTENT */
 
 
 
@@ -351,4 +400,16 @@ span.icon_me {
     color: #c4c4c4;
 
     margin-right: 28px;
+}
+
+/* RESPONSIVE SCALE SCREENS */
+@media only screen and (width: 1280px) {
+    body {
+        zoom: 0.67;
+    }
+}
+@media only screen and (width: 1536px) {
+    body {
+        zoom: 0.8;
+    }
 }
